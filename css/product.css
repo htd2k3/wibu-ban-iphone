@@ -1,0 +1,92 @@
+
+main{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container{
+    width: 92%;
+    margin: 0 auto;
+    margin-top: 5rem;
+}
+.breadcrumb{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-row{
+    width: 60%;
+}
+.nav-row span i {
+    font-size: 12px;
+}
+.nav-row a:first-child{
+    font-size: 12px;
+    font-weight: 400;
+    color: #d7d7d7;
+}
+.nav-row a:first-child{
+    color: rgb(49, 49, 49);
+}
+.nav-row a:last-child{
+    font-size: 12px;
+    font-weight: 700;
+    color: #000;
+}
+.result p{
+    font-weight: 500
+}
+.order select{
+    padding: 5px 0px;
+    border: 2px solid black;
+    outline: none;
+    border-radius:8px ;
+    font-size: 18px;
+}
+
+/* bán đt */
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.item{
+    margin: 10px 0;
+    padding: 10px 0;
+    background-color: white;
+    border-radius: 20px;
+}
+.item .name-item{
+    text-align: center  ;
+}
+.item .name-item p{
+    font-weight: 700;
+}
+.item .name-item p:last-child{
+    color: red;
+}
+@media only screen and (max-width: 768px){
+    .nav-row{
+        width: 100%;
+    }
+    .search-navbar input {
+        display: none;
+    }
+    .search-navbar i{
+        font-size: 27px;
+    }
+    .breadcrumb{
+        display: block;
+        text-align: center;
+    }
+    .result{
+        display: none;
+    }
+    .item{
+        width: 47%;
+    }
+    .item img{
+        width: 100%;
+    }
+}
+

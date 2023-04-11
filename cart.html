@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wibu-iPhone / Giỏ hàng</title>
+    <link rel="icon" href="./Images/icon.png" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/cart.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.css">
+</head>
+<html>
+    
+<body>
+    <header>
+        <nav>
+            <div class="menu-hover">
+                <div class="icon-header">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="right--nav">
+                    <ul>
+                        <li><a href="./phone.html">Điện thoại</a></li>
+                        <li><a href="./ipad.html">Ipad</a></li>
+                        <li><a href="./macbook.html">Macbook</a></li>
+                        <li><a href="">Âm thanh</a></li>
+                        <li><a href="">Máy chiếu</a></li>
+                        <li><a href="">Phụ kiện Apple</a></li>
+                        <li><a href="">Phụ kiện Macbook</a></li>
+                        <li><a href="./phone-accessories.html">Phụ kiện khác</a></li>
+                        <li><a href="">Tin tức</a></li>
+                        <li><a href="">Wallpapers tháng</a></li>
+                        <li><a href="">Khuyến mãi</a></li>
+                        <li><a href="">Chính sách bảo hành</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="image-header">
+                <a href="./index.html">
+                    <img src="./Images/logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="search-navbar">
+                <input type="text" placeholder="Tìm kiếm...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="contact-us">
+                <i class="fa-solid fa-phone"></i>
+                <p>Gọi cho tôi ngay<br>0349044108</p>
+            </div>
+            <div class="address-us">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Về<br>chúng tôi</p>
+            </div>
+            <div class="carts">
+                <a style="color: black;" href="./cart.html">
+                    <i class="fa-solid fa-basket-shopping"></i>
+                </a>
+            </div>
+            <div class="sign-up">
+                <a style="color: black;" href="./login.html">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h3>Giỏ hàng</h3>
+            <table id="table_SP">
+                <tr>
+                    <th colspan="3">Sản phẩm</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành tiền</th>
+                </tr>
+                <tr>
+                    <td><input onclick="tich1checkbox(0)" type="checkbox" name="chon"></td>
+                    <td style="width:10%"><img style="width:100%;" src="./Images/ip1.png" alt=""></td>
+                    <td class="text">iPhone 14 128GB màu tím nhạt</td>
+                    <td name="gia" style="color: red; font-weight:bold;">20590000</td>
+                    <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                    <td name="thanhtien"></td>
+                </tr>
+                <tr>
+                    <td><input onclick="tich1checkbox(1)" type="checkbox" name="chon"></td>
+                    <td style="width:10%"><img style="width:100%;" src="./Images/ip3.png" alt=""></td>
+                    <td class="text">iPhone 13 Pro Max 1TB</td>
+                    <td name="gia" style="color: red; font-weight:bold;">31490000</td>
+                    <td><input onkeyup="thanhtien(this)" value="0" name="soluong" disabled></td>
+                    <td name="thanhtien"></td>
+                </tr>
+                <tr class="tong">
+                    <td colspan="4">TỔNG</td>
+                    <td id="tinhtong"></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    
+    <hr>
+    <footer>
+        <div class="inner-col">
+            <div class="footer-col1">
+                <div class="title-col">
+                    <h4>WIBU BÁN IPHONE</h4>
+                </div>
+                <div class="col1-child">
+                    <ul> Facebook
+                        <li><a href="https://www.facebook.com/huynhtandat.2k3" target="page">WIBU BÁN IPHONE</a></li>
+                    </ul>
+                    <ul>Instagram
+                        <li> <a href="https://www.instagram.com/chiladatthoiii/">WIBU BÁN IPHONE</a></li>
+                    </ul>
+                    <ul>TikTok
+                        <li><a href="https://www.tiktok.com/@dathuynh912">WIBU BÁN IPHONE</a></li>
+                    </ul>
+                    <ul>
+                        Email
+                        <li><a href="">dathtps26009@fpt.edu.vn</a></li>
+                    </ul>
+                    <ul>Địa chỉ
+                        <li><a href="">145/60/17 TCH13, tổ 4, KP 9, P. Tân Chánh Hiệp, Quận 12</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-col2">
+                <div class="title-col">
+                    <h4>DỊCH VỤ KHÁCH HÀNG</h4>
+                </div>
+                <div class="col2-child">
+                    <span>Hướng dẫn mua hàng</span>
+                    <span>Quy định đổi hàng</span>
+                    <span>Ưu đãi khách hàng</span>
+                    <span>Điều khoản sử dụng</span>
+                    <span>Chính sách bảo hành</span>
+                    <span>Chính sách thanh toán</span>
+                    <span>Chính sách giao hàng</span>
+                </div>
+            </div>
+            <div class="footer-col3">
+                <div class="title-col">
+                    <h4>ĐĂNG KÝ NHẬN TƯ VẤN</h4>
+                </div>
+                <div class="input-footer">
+                    <input type="submit" value="Nhập số điện thoại">
+                    <a href="./sign-up.html"><input type="submit" value="ĐĂNG KÝ"></a>
+                </div>
+                <div class="title-col">
+                    <h4>DANH MỤC</h4>
+                </div>
+                <div class="btn-footer">
+                    <a href="">
+                        <button>Xu hướng</button>
+                    </a>
+                    <a href="">
+                        <button>Tin tức</button>
+                    </a>
+                    <a href="">
+                        <button>Liên hệ</button>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col4">
+                <img src="./Images/footer.png" alt="">
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    function tich1checkbox(i){
+        var arrSL = document.getElementsByName("soluong");
+        arrSL[i].disabled = !arrSL[i].disabled;
+        if(arrSL[i].disabled == true){
+            arrSL[i].value=0;
+            arrSL[i].parentNode.nextElementSibling.innerText ="";
+        }
+        tongtien();
+    }
+</script>
+<script>
+    function thanhtien(obj){
+        var soluong = obj.value;
+        var gia = obj.parentNode.previousElementSibling.innerText;
+        obj.parentNode.nextElementSibling.innerText = soluong*gia;
+        tongtien();
+    }
+</script>
+<script>
+    function tongtien(){
+        tt=0;
+        var arrThanhtien = document.getElementsByName("thanhtien");
+        for(i=0; i<arrThanhtien.length;i++){
+            if(arrThanhtien[i].parentNode.style.display==""){
+                tien = arrThanhtien[i].innerText;
+            tt+= Number(tien);
+            }
+            
+        }
+        document.getElementById("tinhtong").innerText=tt;
+    } 
+</script>
+
+</html>
